@@ -1,0 +1,55 @@
+.parser {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 0px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.parser button {
+	margin: 20px 0px;
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+	background-color: #000;
+	border: none;
+	width: 50%;
+	height: 36px;
+	font-family: Lucida Console, monospace; 
+}
+
+.parser button:hover {
+	background-color: #424242;
+}
+
+.parser button:active {
+	color: #000;
+	background-color: #BDBDBD;
+}
+
+.parser button:disabled {
+	color: #616161;
+	background-color: #BDBDBD;	
+}
+
+textarea {
+	width: 50%;
+	min-height: 250px;
+	min-width: 50%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	width: fit-content;
+	padding: 8px 12px;
+	margin-top: 10px;
+}
+
+h6 {
+	margin-top: 5px;
+	color: #757575;
+}
