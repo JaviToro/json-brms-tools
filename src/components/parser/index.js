@@ -7,7 +7,6 @@ const Parser = () => {
   const [checkerStatus, setCheckerStatus] = useState("default")
   const [checkerText, setCheckerText] = useState("JSON format will be checked")
   const [copied, setCopied] = useState("Copy to clipboard")
-  const [isButtonEnabled, setButtonEnabled] = useState("disabled")
 
   const search = (obj) => {
     Object.keys(obj).forEach((key) => {
@@ -52,13 +51,19 @@ const Parser = () => {
     setCopied("JSON copied!")
   }
 
+  const cleanInputText = () => {
+    if(input === "Paste the JSON you need to parse here."){
+      setInput("")
+    }
+  }
+
   let checkerClass = `formatChecker-${checkerStatus}`
 
   return (
     <parser class={style.parser}>
-      <textarea type="text" value={input} onInput={handleInputChange} />
+      <textarea type="text" value={input} onFocus={cleanInputText} onInput={handleInputChange} />
       <div className={checkerClass}>{checkerText}</div>
-      <textarea type="text" value={output} />
+      <textarea type="text" value={output} readOnly/>
       <button id="copyButton" onClick={copyToClipboard} disabled>{copied}</button>
     </parser>
   )
