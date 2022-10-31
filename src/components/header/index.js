@@ -4,6 +4,7 @@ import style from './style.css';
 
 const Header = () => (
 	<header class={style.header}>
+		<img src='/assets/img/logo.svg'></img>
 		<h1>JSON BRMS Tools</h1>
 		<nav>
 			<Link activeClassName={style.active} href="/">Java Date Parser</Link>

@@ -3,7 +3,7 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 64px;
+	height: 80px;
 	padding: 0;
 	background: #FFFFFF;
 	z-index: 50;
@@ -12,11 +12,11 @@
 .header h1 {
 	float: left;
 	margin: 0;
-	padding: 0 30px;
+	/*padding: 0 30px;*/
 	font-size: 28px;
-	line-height: 64px;
+	line-height: 80px;
 	font-weight: 600;
-	color: #000;
+	color: #20AABF;
 }
 
 .header nav {
@@ -27,24 +27,32 @@
 
 .header nav a {
 	display: inline-block;
-	height: 64px;
-	line-height: 64px;
+	height: 80px;
+	line-height: 80px;
 	padding: 0 30px;
 	min-width: 50px;
 	text-align: center;
-	background: rgba(255,255,255,0);
+	background: #FFFFFF;
 	text-decoration: none;
-	color: #000;
+	color: #20AABF;
 	will-change: background-color;
 }
 
 .header nav a:hover,
 .header nav a:active {
-	background: #000;
+	background: #20AABF;
 	color: #FFF;
 }
 
 .header nav a.active {
-	background: #C7C7C7;
-	color: #000;
+	background: #D4F9FF;
+	color: #20AABF;
+}
+
+.header img {
+	float: left;
+	margin: 8px 20px 8px 50px;
+	height: 64px;
+	line-height: 80px;
+	top: 50%;
 }

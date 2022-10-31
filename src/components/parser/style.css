@@ -11,7 +11,7 @@
 	color: #FFF;
 	font-size: 14px;
 	text-align: center;
-	background-color: #000;
+	background-color: #20AABF;
 	border: none;
 	width: 50%;
 	height: 36px;
@@ -19,12 +19,13 @@
 }
 
 .parser button:hover {
-	background-color: #424242;
+	color: #20AABF;
+	background-color: #D4F9FF;
 }
 
 .parser button:active {
-	color: #000;
-	background-color: #BDBDBD;
+	color: #FFFFFF;
+	background-color: #20AABF;
 }
 
 .parser button:disabled {
@@ -36,6 +37,10 @@ textarea {
 	width: 50%;
 	min-height: 250px;
 	min-width: 50%;
+}
+
+textarea:focus {
+	outline-color: #20AABF;
 }
 
 form {
