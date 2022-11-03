@@ -17,7 +17,12 @@ const Parser = () => {
         } else {
           day = obj[key].dayOfMonth
         }
-        let month = obj[key].monthValue
+        let month = null
+        if (obj[key].monthValue.toString().length === 1) {
+          day = "0" + obj[key].monthValue.toString()
+        } else {
+          day = obj[key].monthValue
+        }
         let year = obj[key].year
         let date = `${day}-${month}-${year}`
         obj[key] = date
