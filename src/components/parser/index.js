@@ -19,9 +19,9 @@ const Parser = () => {
         }
         let month = null
         if (obj[key].monthValue.toString().length === 1) {
-          day = "0" + obj[key].monthValue.toString()
+          month = "0" + obj[key].monthValue.toString()
         } else {
-          day = obj[key].monthValue
+          month = obj[key].monthValue
         }
         let year = obj[key].year
         let date = `${day}-${month}-${year}`
@@ -40,7 +40,6 @@ const Parser = () => {
     document.getElementById("copyButton").disabled = true;
     try {
       let result = search(JSON.parse(value))
-      console.log(result)
       setOutput(JSON.stringify(result, null, "\t"))
       setCheckerStatus("correct")
       setCheckerText("JSON format is valid")
